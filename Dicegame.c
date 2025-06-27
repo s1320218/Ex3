@@ -4,10 +4,10 @@
 
 int main() {
     int dice1, dice2;
-    char name[10]
+    char name[10];
 
     printf("What is your name?/n> ");
-    scanf("%9s, name");
+    scanf("%9s", name);
     printf("Hello, %s!\n", name);
     
     srand(time(NULL));
@@ -21,9 +21,9 @@ int main() {
     printf("total value: %d\n", dice1 + dice2);
 
     if (dice1 + dice2 >= 8) {
-        printf("You won\n");
+        printf("%s won\n",name);
     } else {
-        printf("You lost\n");
+        printf("%s lost\n",name);
     }
 
     return 0;
