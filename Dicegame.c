@@ -4,6 +4,12 @@
 
 int main() {
     int dice1, dice2;
+    char name[10]
+
+    printf("What is your name?/n> ");
+    scanf("%9s, name");
+    printf("Hello, %s!\n", name);
+    
     srand(time(NULL));
 
     dice1=rand()%6+1;
